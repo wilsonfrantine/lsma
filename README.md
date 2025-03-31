@@ -52,7 +52,7 @@ library(sf)
 
 ```
 
-The package also have functions to plot the extracted scales for visual check and publication, as well as basic metric plots.
+The package also has functions to plot the extracted scales for visual check and publication, as well as basic metric plots.
 
 For detailed usage examples and tutorials, please check out our [vignettes](https://wilsonfrantine.github.io/lsma/).
 
@@ -96,4 +96,4 @@ Frantine-Silva, W. (2024). lsma: A package for landscape structure multi-scale a
 
 ## Reporting Bugs
 
-This is a preview version. If you encounter any bugs or issues, please report them on the [GitHub issue tracker](https://github.com/wilsonfrantine/landscapeDecoupler/issues), or contact me at wilsonfrantine@gmail.com.
+This is a preview version. If you encounter any bugs or issues, please report them on the [GitHub issue tracker](https://github.com/wilsonfrantine/lsma/issues), or contact me at wilsonfrantine@gmail.com.
