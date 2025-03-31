@@ -38,7 +38,7 @@ library(sf)
   landscape_raster <- raster("path/to/your_raster")
   
   # 1.2 Your sampling points
-  path_to_shape_file <- system.file("extdata/pnts.shp", package="landscapeDecoupler")
+  path_to_shape_file <- system.file("extdata/pnts.shp", package="lsma")
   points <- read_points(path_to_shape_file, type="shp")
   
   # Set your buffer sizes (ex. 100m, 500m, 1000m)
