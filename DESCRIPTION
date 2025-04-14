@@ -1,39 +1,14 @@
-Package: landscapeDecoupler
-Type: Package
-Title: Landscape Decoupler: Tools for Multi-scale Landscape Analysis
-Version: 0.3.0
-Author: Wilson Frantine-Silva
-Maintainer: Wilson Frantine Silva <wilsonfrantine@gmail.com>
-Description: landscapeDecoupler provides a comprehensive set of tools to assess landscape metrics and decouple nested spatial patterns across multiple scales. The package is particularly suited for landscape ecologists, conservation scientists, and spatial data analysts working with large-scale raster datasets. It facilitates the evaluation of landscape heterogeneity, connectivity, and fragmentation through a multi-scale approach. Functions include metrics extraction, nested scales analysis, and visualization tools. Parallelization support is available using the 'future' framework, although performance gains vary depending on dataset size. Detailed vignettes are provided to guide users through practical examples.
-License: GPL-3
+Package: lsma
+Title: Landscape Structure Multi-Scale Analysis
+Version: 0.4.0
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Author: Wilson Frantine-Silva [aut, cre]
+Maintainer: Wilson Frantine-Silva <wilsonfrantine@email.com>
+Description: Tools for extracting, processing and modeling landscape
+    structure at multiple spatial scales using buffer-based strategies.
+License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
 Roxygen: list(markdown = TRUE)
-Depends:
-    R (>= 2.10)
-Suggests:
-    rmarkdown,
-    knitr,
-    prettydoc,
-    qpdf,
-    tmap,
-    broom,
-    broom.mixed
-VignetteBuilder: knitr
-Imports:
-    raster,
-    landscapemetrics,
-    sp,
-    sf,
-    future.apply,
-    methods,
-    rlang,
-    rgeos,
-    broomExtra,
-    tidyr,
-    dplyr,
-    purrr,
-    ggplot2,
-    magrittr,
-    usethis, future, rasterVis
+RoxygenNote: 7.3.2
