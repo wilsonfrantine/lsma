@@ -2,10 +2,22 @@
 % Please edit documentation in R/calculate_metrics.R
 \name{calculate_metrics}
 \alias{calculate_metrics}
-\title{Calculate metrics}
+\title{Calculate landscape metrics}
 \usage{
-calculate_metrics(x, metric = NULL, level = NULL, ...)
+calculate_metrics(x, level = "landscape", metric = NULL, ...)
+}
+\arguments{
+\item{x}{An object of class \code{lsma}.}
+
+\item{level}{Character. One of \code{"patch"}, \code{"class"}, or \code{"landscape"}. Passed to \code{calculate_lsm()}.}
+
+\item{metric}{Optional. Vector of metric names to calculate (e.g. \code{"pland"}, \code{"area"}). Default is all.}
+
+\item{...}{Additional arguments passed to \code{calculate_lsm}.}
+}
+\value{
+A tibble with calculated metrics by site and buffer.
 }
 \description{
-TODO: Describe this function.
+Applies selected metrics to each raster layer in the \code{lsma} object using \code{landscapemetrics}.
 }

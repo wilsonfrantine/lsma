@@ -2,9 +2,7 @@ Package: lsma
 Title: Landscape Structure Multi-Scale Analysis
 Version: 0.4.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Author: Wilson Frantine-Silva [aut, cre]
-Maintainer: Wilson Frantine-Silva <wilsonfrantine@email.com>
+    person("Wilson", "Frantine-Silva", email = "wilsonfrantine@gmail.com", role = c("aut", "cre"))
 Description: Tools for extracting, processing and modeling landscape
     structure at multiple spatial scales using buffer-based strategies.
 License: MIT
@@ -12,3 +10,18 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: 
+    dplyr,
+    landscapemetrics,
+    purrr,
+    sf,
+    stars,
+    terra,
+    tmap
+Suggests: 
+    ggplot2,
+    knitr,
+    landscapeDecoupler,
+    prettydoc,
+    raster,
+    rmarkdown
