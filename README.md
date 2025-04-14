@@ -16,7 +16,7 @@ Always check the line below:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("wilsonfrantine/lsma@refactor-v1")
+devtools::install_github("wilsonfrantine/lsma")
 ```
 
 ## How to Use
@@ -31,8 +31,8 @@ Three simple steps to analyze your data:
     library(lsma)
     
     # Load example raster and points
-    r <- terra::rast(system.file("extdata/raster.grd", package = "landscapeDecoupler"))
-    p <- terra::vect(sf::st_read(system.file("extdata/pnts.shp", package = "landscapeDecoupler"), quiet = TRUE))
+    r <- terra::rast(system.file("extdata/raster.grd", package = "lsma"))
+    p <- terra::vect(sf::st_read(system.file("extdata/pnts.shp", package = "lsma"), quiet = TRUE))
     
     # Extract landscapes
     ls <- extract_landscapes(r, p, buffers = c(500, 1000, 2000), strategy = "nested")
