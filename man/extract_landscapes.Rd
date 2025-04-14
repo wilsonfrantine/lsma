@@ -4,7 +4,7 @@
 \alias{extract_landscapes}
 \title{Extract multi-scale landscapes}
 \usage{
-extract_landscapes(r, p, buffers, strategy = "nested", ...)
+extract_landscapes(r, p, buffers, strategy = "nested", keep_buffer = NULL)
 }
 \arguments{
 \item{r}{A \verb{Raster*} or \code{SpatRaster} object.}

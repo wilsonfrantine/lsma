@@ -2,21 +2,22 @@
 % Please edit documentation in R/cut_buffers.R
 \name{partial_decouple_buffers}
 \alias{partial_decouple_buffers}
-\title{Partial decoupled buffer extraction}
+\title{Partially decoupled buffers}
 \usage{
-partial_decouple_buffers(r, p, buffers)
+partial_decouple_buffers(r, p, buffers, keep_buffer)
 }
 \arguments{
-\item{r}{A SpatRaster object.}
+\item{r}{A \code{SpatRaster}.}
 
-\item{p}{A SpatVector with sampling points.}
+\item{p}{A \code{SpatVector} of points.}
 
-\item{buffers}{Numeric vector of buffer radii.}
+\item{buffers}{A numeric vector of buffer distances (sorted ascending).}
+
+\item{keep_buffer}{The buffer to isolate (must be one of the values in \code{buffers}).}
 }
 \value{
-A named list of SpatRaster objects.
+A list with \code{rasters} and \code{buffers}.
 }
 \description{
-Extracts partially decoupled buffers based on a subset of radii.
+Create buffers where one focal buffer is isolated, and all others are grouped.
 }
-\keyword{internal}
