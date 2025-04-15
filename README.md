@@ -46,9 +46,7 @@ Three simple steps to analyze your data:
     # Fit models
     models <- multimodel(metrics, bio_data = data_frame, model_type = "lm", model_formula = "responses ~ predictors")
 
-The package also has functions to plot the extracted scales for visual check and publication, as well as basic metric plots.
-
-For detailed usage examples and tutorials, please check out our [vignettes](https://wilsonfrantine.github.io/lsma/).
+The package also has functions to plot the extracted landscapes for visual check and publication.
 
 ## How to Cite
 
